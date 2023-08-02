@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans ' sans-serif;
+
+}
+section{
+
+    padding: 40px 15%;
+
+}
+.contact{
+    background: #09c13d;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-img img{
+    max-width: 100%;
+    width: 820px;height: auto;
+    border-radius: 10px;
+
+}
+
+.contact-form h1{
+     font-size: 80px;
+     color: #fff;
+     margin-bottom: 20px;
+}
+
+span{
+    color: #f904df;
+
+}
+
+.contact-form p{
+     color: white;
+     letter-spacing: 1px;
+     font-size: 1.1rem;
+     margin-bottom: 3.8rem;
+}
+
+.contact-form form{
+    position: relative;
+
+}
+.contact-form form input,form textarea{
+ width: 100%;
+ padding: 17px;
+ border: none;
+ outline: none;
+ color: #130808;
+ font-size: 1.1rem;
+ margin-bottom: 0.7rem;
+ border-radius: 10px;
+
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form.btn{
+    display: inline-block;
+    background: rgba(229, 21, 115, 0);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+
+}
+
+.contact-form form .btn:hover{
+    border: 2px solid #9004d9;
+    transform: scale(1.1);
+}
+
+@media (max-width:1570px)
+{section{padding: 80px;
+    transition: 2s;
+
+
+}
+.contact-form h1{
+   font-size: 60px;
+}
+.contact-form p{
+    margin-bottom: 3rem;
+}
+
+}
+@media   (max-width: 1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: 3s;
+    }
+    
+}
+@media(max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    display: flex;
+    padding: 0 80px;
+    box-shadow: 10px 10px 10px 10px gray;
+    /* border-radius: 50%; */
+    
+}
+
+.logo{
+    font-family: sans-serif;
+    font-size: 27px;
+    font-style: bolder;
+    color: red;
+    padding-right: 5%;
+}
+nav{
+    width: 100%;
+    height: 0 80px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    display: flex;
+    padding: 0 80px;
+    box-shadow: 10px 10px 10px 10px gray;
+    /* border-radius: 50%; */
+    
+ }
+
+.logo{
+    font-family: sans-serif;
+    font-size: 27px;
+    font-style: bolder;
+    color: red;
+    padding-right: 5%;
+}
+.logo span{
+    color: #090101;
+}  
+
+
+
+ 
+.manue a{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+
+
+}
+.manue a:hover{
+    color:red;
+} 
+ .icon a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px ;
+    border: 12px;
+    
+    
+}
+.icon a:hover{
+color:white;
+background: red;
+border-radius: 8px;
+}
+.icon img:hover{
+  cursor: pointer;
+} 
+
+
+.newsletter{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 30px;
+ }
+ h2{
+   color: white;
+ }
+ p{
+   color: white;
+ }
+
+ footer{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 100px;
+    background: #262626;
+  }
+.newsletter div{
+     flex-basis: 50%;
+}
+
+.fa-content{
+ color: white;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 2px solid rgb(255,255,255,0.2);
+ margin-top: 3em;
+}
+
+.fa-content div{
+ flex-basis: 20%;
+
+
+} 
+
+.fa-content p{
+    font-size: 16px;
+    color: grey;
+     
+
+}
+.fa-content p:hover{
+ cursor: pointer;
+ color: white;
+} 
+
+.icon{
+
+ text-decoration: none;
+ background-color: #e6dbdb;
+ padding: 10px 20px;
+ margin-left: 30px;
+ border-radius: 50px;
+ color: black;
+}

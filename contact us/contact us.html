@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title><link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+  <header>
+ 
+    <nav>
+        <div class="logo">
+      Photo <span>Pi</span>X
+        </div>
+
+         <div class="manue">
+     <a href="index.html">Home</a>
+     <a href="About/About.html">About</a>
+     <a href="#">Gallery</a>
+     <a href="contact us/contact us.html">Contact</a>
+         </div>
+         <div class="icon">
+            <i class="fa fa-search"></i>
+            <a href="#">Login</a>
+
+         </div>
+    </nav>
+      
+
+
+</header>
+
+
+
+
+
+    <section class="contact">
+<div class="contact-form">
+    <h1>Contact<span>Us</span></h1>
+    <p>I am available for freelance work. contact with me via:03272473293 or email: abidhussainaptech2@gmail.com</p>
+ <form action="">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" name="email" id="" placeholder="E-mail" required>
+    <input type="" placeholder="write a subject" required>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your message">
+
+      
+
+    </textarea>
+   
+    <input type="submit" name="" value="submit" class="btn" style="background-color: red;">
+ </form>
+</div>
+  <div class="contact-img">
+    <img src="photo-1558386620-ae4d9c5ae5c2 (1).avif" alt="" style="box-shadow:0 2px 10px 0 white, 0 2px 10px 0 white;">
+
+  </div>
+    </section>
+    <footer>
+
+      <div class="newsletter">
+        <div>
+        <h2>Subscribe our newsletter</h2>
+        <p>We are a team of non-cynics who trully cary for our work. </p>
+     </div>
+     <div>
+        <label><br>
+          <!-- <input style="text-align: right; border-radius: 8px; border: none; width: 20%; height: 40px; color: white; outline: none;" type="text" name="" placeholder="Enter your Email..."> -->
+          <!-- <button style="text-align: right; background: white; border-radius: 8px; cursor: pointer; border: none;">Subscribe</button> -->
+        </label>
+     </div> 
+      </div>
+
+      <div class="fa-content" data-aos="zoom-in-up" data-aos-off="200">
+    
+        <div>
+   <h1>Information</h1>
+   <p>Learn ipsum dolor sit amet, consecteture elit. Nhil sit dicta.  </p>
+   
+   </div>
+        
+   <div>
+
+        <h1>Useful links</h1>
+        <p>About us</p>
+        <p>Gallery</p>
+        <p>Pticing Plans</p>
+        <p>Blogs Posts</p>
+
+      </div>
+    
+      <div>
+
+        <h1>Details</h1>
+        <p>Photographers</p>
+        <p>About us</p>
+        <p>Gallery</p>
+        
+        <p>Pricing Plans</p>
+
+      </div>
+
+      <div>
+
+        <h1>Healp & Support</h1>
+        <p>Privacy Policy</p>
+        <p>Term & conditions</p>
+        <p>Technical Supports</p>
+       <p>Customer Care</p>
+      </div>
+
+  </div>
+     </footer>
+
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+
+     <script>
+      $('.portfolio-item').isotope({
+        // options
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+            
+         $('.portfolio-menu ul li').click(function(){
+          $('.portfolio-menu ul li').removeClass('active');
+          $(this).addClass('active');
+          var selector = $(this).attr('data-filter');
+          $('.portfolio-item').isotope({
+              filter:selector
+          });
+          return false
+         });
+      
+      </script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
